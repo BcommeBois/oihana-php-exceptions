@@ -1,6 +1,6 @@
 # Oihana PHP - Exceptions library
 
-![Oihana Php Core](https://raw.githubusercontent.com/BcommeBois/oihana-php-exceptions/main/.phpdoc/template/assets/images/oihana-php-exceptions-logo-inline-512x160.png)
+![Oihana Php Exceptions](https://raw.githubusercontent.com/BcommeBois/oihana-php-exceptions/main/assets/images/oihana-php-exceptions-logo-inline-512x160.png)
 
 A curated set of reusable custom exception classes for PHP
 
