@@ -25,7 +25,7 @@
     {
         "psr-4" :
         {
-            "oihana\\exceptions\\": "src/oihana/exceptions",
+            "oihana\\exceptions\\": "src/oihana/exceptions"
         }
     },
     "require": {
