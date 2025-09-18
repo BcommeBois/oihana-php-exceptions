@@ -2,7 +2,7 @@
 
 ![Oihana Php Exceptions](https://raw.githubusercontent.com/BcommeBois/oihana-php-exceptions/main/assets/images/oihana-php-exceptions-logo-inline-512x160.png)
 
-A curated set of reusable custom exception classes for PHP
+A curated set of reusable custom exception classes for PHP.
 
 [![Latest Version](https://img.shields.io/packagist/v/oihana/php-exceptions.svg?style=flat-square)](https://packagist.org/packages/oihana/php-exceptions)  
 [![Total Downloads](https://img.shields.io/packagist/dt/oihana/php-exceptions.svg?style=flat-square)](https://packagist.org/packages/oihana/php-exceptions)  

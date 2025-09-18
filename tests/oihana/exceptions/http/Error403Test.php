@@ -20,7 +20,7 @@ class Error403Test extends TestCase
     {
         $e = new Error403();
 
-        $this->assertSame('Forbidden error (403)', $e->getMessage());
+        $this->assertSame('Forbidden (403)', $e->getMessage());
         $this->assertSame(403, $e->getCode());
         $this->assertNull($e->getPrevious());
     }

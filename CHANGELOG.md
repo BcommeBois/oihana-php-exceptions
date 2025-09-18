@@ -16,8 +16,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Adds oihana\exceptions\ResponseException
 - Adds oihana\exceptions\UnsupportedOperationException
 - Adds oihana\exceptions\ValidationException
--
+
+- Adds oihana\exceptions\http\Error400
+- Adds oihana\exceptions\http\Error401
+- Adds oihana\exceptions\http\Error402
 - Adds oihana\exceptions\http\Error403
 - Adds oihana\exceptions\http\Error404
 - Adds oihana\exceptions\http\Error500
-- 
