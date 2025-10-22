@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+### Added
+
+- Adds oihana\exceptions\http\Error409
+
 ## [1.0.0] - 2025-08-13
 
 ### Added
@@ -23,3 +27,4 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Adds oihana\exceptions\http\Error403
 - Adds oihana\exceptions\http\Error404
 - Adds oihana\exceptions\http\Error500
+

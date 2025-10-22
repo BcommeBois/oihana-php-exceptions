@@ -21,7 +21,7 @@ use Throwable;
 class Error400 extends Exception
 {
     /**
-     * Creates a new Error403 instance.
+     * Creates a new Error400 instance.
      * @param string $message
      * @param int $code
      * @param Throwable|null $notFound
