@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 use Exception;
 
 /**
- * An exception thrown when an operation is unsupported.
+ * Occurs when a bind variable is not valid or failed.
  *
  * @package oihana\exceptions
  * @author  Marc Alcaraz (ekameleon)

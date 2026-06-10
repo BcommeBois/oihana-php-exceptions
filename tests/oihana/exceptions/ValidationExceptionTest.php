@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 use Exception;
 
 /**
- * An exception thrown when an operation is unsupported.
+ * An exception thrown when a validation failed.
  *
  * @package oihana\exceptions
  * @author  Marc Alcaraz (ekameleon)
