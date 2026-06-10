@@ -8,6 +8,8 @@ short description of what the class or change does.
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-06-10
+
 ### Added
 
 - `http\HttpException` — common base class for every HTTP error exception.
