@@ -10,17 +10,37 @@ short description of what the class or change does.
 
 ### Added
 
-- `http\Error400` — HTTP **400 Bad Request** exception (default message and status code).
-- `http\Error401` — HTTP **401 Unauthorized** exception.
-- `http\Error402` — HTTP **402 Payment Required** exception.
-- `http\Error405` — HTTP **405 Method Not Allowed** exception.
-- `http\Error409` — HTTP **409 Conflict** exception.
+- `http\HttpException` — common base class for every HTTP error exception.
+  Subclasses declare only their `DEFAULT_CODE` and `DEFAULT_MESSAGE` constants;
+  `catch (HttpException $e)` now matches any HTTP error.
+- HTTP client-error (4xx) exceptions, each carrying the standard reason phrase
+  and status code: `Error400` (Bad Request), `Error401` (Unauthorized),
+  `Error402` (Payment Required), `Error405` (Method Not Allowed),
+  `Error406` (Not Acceptable), `Error407` (Proxy Authentication Required),
+  `Error408` (Request Timeout), `Error409` (Conflict), `Error410` (Gone),
+  `Error411` (Length Required), `Error412` (Precondition Failed),
+  `Error413` (Content Too Large), `Error414` (URI Too Long),
+  `Error415` (Unsupported Media Type), `Error416` (Range Not Satisfiable),
+  `Error417` (Expectation Failed), `Error418` (I'm a teapot),
+  `Error422` (Unprocessable Content), `Error428` (Precondition Required),
+  `Error429` (Too Many Requests), `Error431` (Request Header Fields Too Large),
+  `Error451` (Unavailable For Legal Reasons).
+- HTTP server-error (5xx) exceptions: `Error501` (Not Implemented),
+  `Error502` (Bad Gateway), `Error503` (Service Unavailable),
+  `Error504` (Gateway Timeout).
 - Test-coverage tooling: `composer coverage` / `composer coverage:md` and a
   portable Clover → Markdown reporter under `tools/`. Line coverage is now 100%.
 - Continuous integration (GitHub Actions) running the test suite on PHP 8.4.
 - Online API documentation (phpDocumentor) deployed to GitHub Pages, with a
   custom landing page showing the logo and a README-style overview.
 - `CONTRIBUTING.md` describing setup, running the tests and the coverage workflow.
+
+### Changed
+
+- The `Error4xx` / `Error5xx` classes now extend `http\HttpException` and declare
+  only their default constants. Behaviour is unchanged for positional callers
+  (`new Error404()` still yields the same message and code); the third
+  constructor argument is uniformly named `$previous` (was `$notFound`).
 
 ### Fixed
 
