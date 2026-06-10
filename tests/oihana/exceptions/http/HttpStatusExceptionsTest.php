@@ -45,7 +45,12 @@ class HttpStatusExceptionsTest extends TestCase
             [ 'Error416' , 'Range Not Satisfiable (416)'           , 416 ] ,
             [ 'Error417' , 'Expectation Failed (417)'              , 417 ] ,
             [ 'Error418' , 'I\'m a teapot (418)'                   , 418 ] ,
+            [ 'Error421' , 'Misdirected Request (421)'             , 421 ] ,
             [ 'Error422' , 'Unprocessable Content (422)'           , 422 ] ,
+            [ 'Error423' , 'Locked (423)'                          , 423 ] ,
+            [ 'Error424' , 'Failed Dependency (424)'               , 424 ] ,
+            [ 'Error425' , 'Too Early (425)'                       , 425 ] ,
+            [ 'Error426' , 'Upgrade Required (426)'                , 426 ] ,
             [ 'Error428' , 'Precondition Required (428)'           , 428 ] ,
             [ 'Error429' , 'Too Many Requests (429)'               , 429 ] ,
             [ 'Error431' , 'Request Header Fields Too Large (431)' , 431 ] ,
@@ -55,6 +60,12 @@ class HttpStatusExceptionsTest extends TestCase
             [ 'Error502' , 'Bad Gateway (502)'                     , 502 ] ,
             [ 'Error503' , 'Service Unavailable (503)'             , 503 ] ,
             [ 'Error504' , 'Gateway Timeout (504)'                 , 504 ] ,
+            [ 'Error505' , 'HTTP Version Not Supported (505)'      , 505 ] ,
+            [ 'Error506' , 'Variant Also Negotiates (506)'         , 506 ] ,
+            [ 'Error507' , 'Insufficient Storage (507)'            , 507 ] ,
+            [ 'Error508' , 'Loop Detected (508)'                   , 508 ] ,
+            [ 'Error510' , 'Not Extended (510)'                    , 510 ] ,
+            [ 'Error511' , 'Network Authentication Required (511)' , 511 ] ,
         ];
 
         $data = [];
