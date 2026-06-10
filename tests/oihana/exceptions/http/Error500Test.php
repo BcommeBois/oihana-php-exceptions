@@ -29,7 +29,7 @@ class Error500Test extends TestCase
     {
         $message  = 'Custom not found message';
         $code     = 999;
-        $previous = $this->createMock(Throwable::class);
+        $previous = $this->createStub(Throwable::class);
 
         $e = new Error500($message, $code, $previous);
 
