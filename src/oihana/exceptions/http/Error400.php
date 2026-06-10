@@ -2,9 +2,6 @@
 
 namespace oihana\exceptions\http ;
 
-use Exception;
-use Throwable;
-
 /**
  * The HTTP 400 Bad Request client error response status code indicates
  * that the server would not process the request due to something the server considered to be a client error.
@@ -18,16 +15,8 @@ use Throwable;
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/400
  */
-class Error400 extends Exception
+class Error400 extends HttpException
 {
-    /**
-     * Creates a new Error400 instance.
-     * @param string $message
-     * @param int $code
-     * @param Throwable|null $notFound
-     */
-    public function __construct( string $message = 'Bad Request (400)' , int $code = 400 , Throwable|null $notFound = null )
-    {
-        parent::__construct( $message , $code , $notFound ) ;
-    }
+    public const int    DEFAULT_CODE    = 400 ;
+    public const string DEFAULT_MESSAGE = 'Bad Request (400)' ;
 }

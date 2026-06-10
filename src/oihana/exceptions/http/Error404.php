@@ -2,12 +2,7 @@
 
 namespace oihana\exceptions\http ;
 
-use Exception;
-use Throwable;
-
 /**
- * Throw an 'not found error' (404).
- *
  * The HTTP 404 Not Found client error response status code indicates that the server cannot
  * find the requested resource. Links that lead to a 404 page are often called
  * broken or dead links and can be subject to link rot.
@@ -18,16 +13,8 @@ use Throwable;
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/404
  */
-class Error404 extends Exception
+class Error404 extends HttpException
 {
-    /**
-     * Creates a new Error404 instance.
-     * @param string $message
-     * @param int $code
-     * @param Throwable|null $notFound
-     */
-    public function __construct( string $message = 'Not found error (404)' , int $code = 404 , Throwable|null $notFound = null )
-    {
-        parent::__construct( $message , $code , $notFound ) ;
-    }
+    public const int    DEFAULT_CODE    = 404 ;
+    public const string DEFAULT_MESSAGE = 'Not found error (404)' ;
 }

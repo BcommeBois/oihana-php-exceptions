@@ -2,9 +2,6 @@
 
 namespace oihana\exceptions\http ;
 
-use Exception;
-use Throwable;
-
 /**
  * The HTTP 402 Payment Required client error response status code
  * is a nonstandard response status code reserved for future use.
@@ -15,16 +12,8 @@ use Throwable;
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/402
  */
-class Error402 extends Exception
+class Error402 extends HttpException
 {
-    /**
-     * Creates a new Error402 instance.
-     * @param string $message
-     * @param int $code
-     * @param Throwable|null $notFound
-     */
-    public function __construct( string $message = 'Payment Required (402)' , int $code = 402 , Throwable|null $notFound = null )
-    {
-        parent::__construct( $message , $code , $notFound ) ;
-    }
+    public const int    DEFAULT_CODE    = 402 ;
+    public const string DEFAULT_MESSAGE = 'Payment Required (402)' ;
 }

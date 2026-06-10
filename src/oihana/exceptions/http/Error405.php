@@ -2,12 +2,7 @@
 
 namespace oihana\exceptions\http ;
 
-use Exception;
-use Throwable;
-
 /**
- * Throw an 'Method Not Allowed' (405).
- *
  * The HTTP 405 Method Not Allowed client error response status code indicates that the server knows the request method,
  * but the target resource doesn't support this method.
  *
@@ -20,16 +15,8 @@ use Throwable;
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/405
  */
-class Error405 extends Exception
+class Error405 extends HttpException
 {
-    /**
-     * Creates a new Error405 instance.
-     * @param string $message
-     * @param int $code
-     * @param Throwable|null $notFound
-     */
-    public function __construct( string $message = 'Method Not Allowed (405)' , int $code = 405 , Throwable|null $notFound = null )
-    {
-        parent::__construct( $message , $code , $notFound ) ;
-    }
+    public const int    DEFAULT_CODE    = 405 ;
+    public const string DEFAULT_MESSAGE = 'Method Not Allowed (405)' ;
 }
