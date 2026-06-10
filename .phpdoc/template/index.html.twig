@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+<section class="phpdocumentor-section">
+
+<a href="https://github.com/BcommeBois/oihana-php-exceptions" class="phpdocumentor-title__link">
+    <img src="assets/images/oihana-php-exceptions-logo-inline-512x160.png" alt="Oihana PHP Exceptions" style="width: 256px; height: 80px;"/>
+</a>
+
+</br>
+
+<p>
+	<a href="https://packagist.org/packages/oihana/php-exceptions" target="_blank">
+		<img alt="Latest Version" src="https://img.shields.io/packagist/v/oihana/php-exceptions.svg?style=flat-square"/>
+	</a>
+	<a href="https://packagist.org/packages/oihana/php-exceptions" target="_blank">
+		<img alt="Total Downloads" src="https://img.shields.io/packagist/dt/oihana/php-exceptions.svg?style=flat-square"/>
+	</a>
+	<a href="LICENSE" target="_blank">
+		<img alt="License" src="https://img.shields.io/packagist/l/oihana/php-exceptions.svg?style=flat-square"/>
+	</a>
+</p>
+
+<p>A lightweight, framework-agnostic collection of well-defined exception classes that extend PHP's native <code>Exception</code>. Each type represents a clear, specific error scenario — making error handling more expressive, consistent and easier to maintain.</p>
+
+<h3>📚 Documentation</h3>
+<p>You are currently browsing the auto-generated API reference (phpDocumentor).</p>
+<ul>
+    <li>🌐 <a href="https://bcommebois.github.io/oihana-php-exceptions" target="_blank">Online API documentation</a></li>
+    <li>📒 <a href="https://github.com/BcommeBois/oihana-php-exceptions/blob/main/CHANGELOG.md" target="_blank">Changelog</a></li>
+</ul>
+
+<h3>📦 Installation</h3>
+<p>This library requires <a href="https://php.net/releases/" target="_blank">PHP 8.4+</a> and is installed via <a href="https://getcomposer.org/" target="_blank">Composer</a>:</p>
+<pre class="language-bash prettyprint">composer require oihana/php-exceptions</pre>
+
+<h3>✨ Features</h3>
+<ul>
+	<li>🛠 Ready-to-use exception classes for common application errors.</li>
+	<li>🧩 Extends the standard <code>Exception</code> class where relevant.</li>
+	<li>🌐 HTTP error exceptions (<code>Error400</code> … <code>Error500</code>) with sensible default messages and status codes.</li>
+	<li>🔍 Improves code readability and error semantics.</li>
+	<li>⚡ Lightweight with zero external dependencies.</li>
+	<li>📦 Easily integrable in any PHP project or framework.</li>
+</ul>
+
+<h3>✅ Tests &amp; coverage</h3>
+<p>Run the unit-test suite (PHPUnit, strict mode):</p>
+<pre class="language-bash prettyprint">composer test</pre>
+<p>Measure coverage (requires Xdebug or PCOV):</p>
+<pre class="language-bash prettyprint">composer coverage
+composer coverage:md</pre>
+
+<h3>🧾 License</h3>
+<p>This project is licensed under the <strong><a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0 (MPL-2.0)</a></strong>.</p>
+
+<h3>👤 About the Author</h3>
+<ul>
+    <li><strong>Name:</strong> Marc ALCARAZ (aka <em>eKameleon</em>)</li>
+    <li><strong>Website:</strong> <a href="https://www.ooop.fr" target="_blank">www.ooop.fr</a></li>
+    <li><strong>Email:</strong> <a href="mailto:marc@ooop.fr">marc@ooop.fr</a></li>
+</ul>
+
+<h3>🔗 Related packages</h3>
+<ul>
+    <li><a href="https://github.com/BcommeBois/oihana-php-core" target="_blank">oihana/php-core</a> — core helpers and utilities used across the Oihana libraries.</li>
+</ul>
+
+<h3>🔗 Project on GitHub</h3>
+<p>View the full source code and contribute on GitHub:
+    <a href="https://github.com/BcommeBois/oihana-php-exceptions" target="_blank">github.com/BcommeBois/oihana-php-exceptions</a>.
+</p>
+
+</section>
+{% endblock %}
