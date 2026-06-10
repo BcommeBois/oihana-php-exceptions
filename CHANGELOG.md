@@ -13,21 +13,27 @@ short description of what the class or change does.
 - `http\HttpException` — common base class for every HTTP error exception.
   Subclasses declare only their `DEFAULT_CODE` and `DEFAULT_MESSAGE` constants;
   `catch (HttpException $e)` now matches any HTTP error.
-- HTTP client-error (4xx) exceptions, each carrying the standard reason phrase
-  and status code: `Error400` (Bad Request), `Error401` (Unauthorized),
-  `Error402` (Payment Required), `Error405` (Method Not Allowed),
-  `Error406` (Not Acceptable), `Error407` (Proxy Authentication Required),
-  `Error408` (Request Timeout), `Error409` (Conflict), `Error410` (Gone),
-  `Error411` (Length Required), `Error412` (Precondition Failed),
-  `Error413` (Content Too Large), `Error414` (URI Too Long),
-  `Error415` (Unsupported Media Type), `Error416` (Range Not Satisfiable),
-  `Error417` (Expectation Failed), `Error418` (I'm a teapot),
-  `Error422` (Unprocessable Content), `Error428` (Precondition Required),
+- The complete set of HTTP client-error (4xx) exceptions, each carrying the
+  standard reason phrase and status code: `Error400` (Bad Request),
+  `Error401` (Unauthorized), `Error402` (Payment Required),
+  `Error405` (Method Not Allowed), `Error406` (Not Acceptable),
+  `Error407` (Proxy Authentication Required), `Error408` (Request Timeout),
+  `Error409` (Conflict), `Error410` (Gone), `Error411` (Length Required),
+  `Error412` (Precondition Failed), `Error413` (Content Too Large),
+  `Error414` (URI Too Long), `Error415` (Unsupported Media Type),
+  `Error416` (Range Not Satisfiable), `Error417` (Expectation Failed),
+  `Error418` (I'm a teapot), `Error421` (Misdirected Request),
+  `Error422` (Unprocessable Content), `Error423` (Locked),
+  `Error424` (Failed Dependency), `Error425` (Too Early),
+  `Error426` (Upgrade Required), `Error428` (Precondition Required),
   `Error429` (Too Many Requests), `Error431` (Request Header Fields Too Large),
   `Error451` (Unavailable For Legal Reasons).
-- HTTP server-error (5xx) exceptions: `Error501` (Not Implemented),
-  `Error502` (Bad Gateway), `Error503` (Service Unavailable),
-  `Error504` (Gateway Timeout).
+- The complete set of HTTP server-error (5xx) exceptions:
+  `Error501` (Not Implemented), `Error502` (Bad Gateway),
+  `Error503` (Service Unavailable), `Error504` (Gateway Timeout),
+  `Error505` (HTTP Version Not Supported), `Error506` (Variant Also Negotiates),
+  `Error507` (Insufficient Storage), `Error508` (Loop Detected),
+  `Error510` (Not Extended), `Error511` (Network Authentication Required).
 - Test-coverage tooling: `composer coverage` / `composer coverage:md` and a
   portable Clover → Markdown reporter under `tools/`. Line coverage is now 100%.
 - Continuous integration (GitHub Actions) running the test suite on PHP 8.4.
